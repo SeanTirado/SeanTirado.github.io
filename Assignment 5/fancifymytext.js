@@ -15,7 +15,7 @@ function makeMoo() {
         word += "-Moo";
         words[i] = word;
     }
-    document.getElementById("inputText-1").value = words.join("");
+    document.getElementById("inputText-1").value = words.join(".");
 }
 
 function fancy() {

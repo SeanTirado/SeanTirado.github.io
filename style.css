@@ -4,27 +4,59 @@
     --ff: "Montserrat", sans-serif;
     --colorprimary: #ffffff;
     --colorsecondary: #f5f5dc;
+    --colorsecondary2: #d9b382;
     --coloraccent: #a0c1b9; 
     --coloraccent2: #659791;
     --h1: bold 64px/72px var(--ff);
     --p: 18px/30px var(--ff);
+    --transition: 0.3s ease-in-out;
 }
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+/* BODY APPLIES TO WHOLE PAGE */
 body {
-    width: 90%;
-    max-width: 1280px;
-    margin: 100px auto;
     background: var(--colorsecondary);
     color: var(--colorprimary);
     font: var(--p);
+    margin: 0;
+}
+.banner {
+    background: var(--coloraccent);
+    height: auto;
+    border-bottom: solid 1px var(--coloraccent2);
+    scroll-snap-align: start;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border-left: solid  1px var(--coloraccent2);
+}
+.banner-text {
+    padding: 14px 16px;
+    text-align: center;
+}
+.banner-image {
+    border-left: solid  1px var(--coloraccent2);
+    max-width: 800px;
+    opacity: 85%;
+    border-radius: 20px;
+}
+div {
+    width: 90%;
+    max-width: 1280px;
+    margin: 100px auto;
     display: flex;
     gap: 40px;
     align-items: center;
     flex-wrap: wrap;
 }
-div {
+section {
     flex: 1;
-    min-width: min(500px, 90vw);
+    min-width: min(500px, 90vw, 50vh);
+    margin: 250px auto;
     border-radius: 10px;
+    scroll-snap-align: center;
 }
 h1 {
     font: var(--h1);
@@ -34,19 +66,74 @@ p {
     font: var(--p);
     color: black;
 }
-a {
+.git-button a {
     background: var(--coloraccent);
     color: var(--colorprimary);
     padding: 20px 40px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    color: white;
 }
-a:hover {
+.git-button a:hover {
     background-color: var(--coloraccent2);
   }
 img {
-    width:67%;
-    padding: 20px;
+    width: 70%;
+    height: auto;
+}
+.project-image {
+    box-shadow: 5px 5px 10px black;
     border-radius: 30px;
 }
+.project-image:hover {
+    scale: 1.05;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.navbar {
+    background-color: var(--colorsecondary2);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 500px;
+    justify-content: center;
+    margin: 0;
+    border-radius: 10px;
+    border-bottom: solid 1px var(--colorsecondary);
+    border-left: solid 1px var(--colorsecondary);
+    border-right: solid 1px var(--colorsecondary);
+}
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--colorprimary);
+}
+.navbar a.active {
+    background-color: var(--coloraccent2);
+}
+.to-top a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--colorprimary);
+    background-color: var(--colorsecondary2);
+    border-radius: 20px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    display: none;
+}
+.to-top a:hover {
+    background-color: var(--coloraccent2);
+}
+#myBtn {
+    display: none; /* Hidden by default */
+  }

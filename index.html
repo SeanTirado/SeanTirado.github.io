@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head> <!-- Head tag is responsible for holding instructions for browser-->
+<head> <!-- Head tag is responsible for holding instructions for browser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SeanTirado Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
- <body>
-    <!-- Item 1 -->
-    <div>
-        <h1>This is Test Text</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <!-- Uses "rel=..." to prevent tabnabbing -->
-        <a href="https://github.com/SeanTirado/Portfolio_Website" target="_blank" rel="noopener noreferrer">  
-            Git Repo <!-- Name of Item-->
-        </a>
-    </div>
-    <div><img src="/Images/Lily_Image.png" alt="">
-    </div>
+<body>
+<!-- Top Banner -->
+    <header class="banner">
+        <h1 class="banner-text"> Top Banner Text Goes Here </h1>
+        <img class="banner-image" src="/Images/eepyKitten.png" alt="">
+    </header>
+<!-- Navigation Bar --> 
+<div class="navbar">
+    <a class="active" href="#All">All</a>
+    <a href="#Java">Java</a>
+    <a href="#Python">Python</a>
+    <a href="#Resume">Resume</a>
+</div>
 
-    <!-- Item 2 -->
-    <div>
-        <h1>This is Test Text</h1>
+<div>
+<!-- Item 1 -->
+    <section class="git-button">
+        <h1>Project 1 - Lily</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -39,13 +35,14 @@
         <a href="https://github.com/SeanTirado/Portfolio_Website" target="_blank" rel="noopener noreferrer">  
             Git Repo <!-- Name of Item-->
         </a>
-    </div>
-    <div><img src="/Images/Banner_Image.png" alt="">
-    </div>
+    </section>
+    <section>
+        <img class="project-image" src="/Images/Lily_Image.png" alt="">
+    </section>
 
-    <!-- Item 3 -->
-    <div>
-        <h1>This is Test Text</h1>
+<!-- Item 2 -->
+    <section class="git-button">
+        <h1>Project 2 - Banner the Dog</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -56,8 +53,45 @@
         <a href="https://github.com/SeanTirado/Portfolio_Website" target="_blank" rel="noopener noreferrer">  
             Git Repo <!-- Name of Item-->
         </a>
-    </div>
-    <div><img src="/Images\Bruce_Image.png" alt="">
-    </div>
+    </section>
+    <section>
+        <img class="project-image" src="/Images/Banner_Image.png" alt="">
+    </section>
+
+<!-- Item 3 -->
+    <section class="git-button">
+        <h1>Project 3 - Bruce</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <!-- Uses "rel=..." to prevent tabnabbing -->
+        <a href="https://github.com/SeanTirado/Portfolio_Website" target="_blank" rel="noopener noreferrer">  
+            Git Repo <!-- Name of Item-->
+        </a>
+    </section>
+    <section>
+        <img class="project-image" src="/Images\Bruce_Image.png" alt="">
+    </section>
+</div>
+
+<div class="to-top" id="myBtn">
+    <a href="#">Scroll to Top</a>
+</div>
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
  </body>
 </html>

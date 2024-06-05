@@ -16,11 +16,14 @@ html {
     scroll-behavior: smooth;
 }
 /* BODY APPLIES TO WHOLE PAGE */
-body {
+body::-webkit-scrollbar {
     background: var(--colorsecondary);
     color: var(--colorprimary);
     font: var(--p);
-    margin: 0;
+    margin: 0rem;
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .banner {
     background: var(--coloraccent);
@@ -114,6 +117,9 @@ img {
     color: var(--colorprimary);
 }
 .navbar a.active {
+    background-color: var(--coloraccent2);
+}
+.navbar a:hover {
     background-color: var(--coloraccent2);
 }
 .to-top a {

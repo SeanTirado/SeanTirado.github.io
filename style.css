@@ -73,6 +73,7 @@ p {
 }
 span {
     background: linear-gradient(to right, var(--colorsecondary2), var(--colorprimary));
+    background-clip: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

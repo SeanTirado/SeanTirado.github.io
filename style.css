@@ -27,6 +27,26 @@ body::-webkit-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes appear-slide-down {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
 .banner {
     background: var(--coloraccent);
     height: auto;
@@ -41,11 +61,14 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 .banner-image {
+    display: flex;
     box-shadow: 0 0 5px var(--coloraccent2);
     max-width: 100vw;
     opacity: 85%;
-    border-radius: 5rem;
+    border-top-left-radius: 30px 50%;
+    border-bottom-left-radius: 30px 50%;
     position: relative;
+    min-width: 40vw;
 }
 div {
     width: 90%;
@@ -59,9 +82,32 @@ div {
 section {
     flex: 1;
     min-width: min(500px, 90vw, 50vh);
-    margin: 250px auto;
+    place-items: center;
+    align-content: center;
+    min-height: 90vh;
     border-radius: 10px;
     scroll-snap-align: center;
+    
+}
+section img {
+    animation: appear-slide-down linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%; 
+}
+section p {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; 
+}
+section h1 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%; 
+}
+section a {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; 
 }
 h1 {
     font: var(--h1);
@@ -93,7 +139,6 @@ span {
 img {
     width: 70%;
     height: auto;
-    
 }
 .project-image {
     box-shadow: 5px 5px 10px black;
@@ -116,6 +161,7 @@ img {
     box-shadow: 0 0 5px var(--coloraccent);
     gap: 0;
     max-width: 60rem;
+    min-width: 30rem;
 }
 .navbar a {
     float: left;
@@ -151,6 +197,7 @@ img {
 .to-top a:hover {
     background-color: var(--coloraccent2);
 }
-#myBtn {
-    display: none; /* Hidden by default */
+#project-track {
+    display: flex;
+    transform: translate();
 }

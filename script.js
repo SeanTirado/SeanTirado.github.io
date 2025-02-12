@@ -1,13 +1,13 @@
   const noButton = document.getElementById('no-button')
-  const yesButton = document.getElementById('yes-button')
+  //const yesButton = document.getElementById('yes-button')
   const OFFSET = 30
 
-  let scaleFactor = 1.5
+  //let scaleFactor = 1.5
 
-  noButton.addEventListener('click', ()=> {
+  /*noButton.addEventListener('click', ()=> {
     scaleFactor += 1.5; 
     yesButton.style.transform = `scale(${scaleFactor})`;
-  });
+  });*/
 
 document.addEventListener('mousemove', (e) => {
     const x = e.pageX

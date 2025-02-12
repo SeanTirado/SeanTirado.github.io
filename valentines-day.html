@@ -37,7 +37,7 @@
 
     <script>
     function noButtonScale() {
-        const yesButton = document.getElementById('yes-button')
+        const yesButton = document.getElementById('yes-button');
         let currentScale = parseFloat(yesButton.style.transform.replace(/[^0-9.]/g, '')) || 1;
 
         yesButton.style.transform = `scale(${currentScale + 0.5})`;

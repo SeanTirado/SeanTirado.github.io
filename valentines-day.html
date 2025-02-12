@@ -37,16 +37,10 @@
 
     <script>
     function noButtonScale() {
-        const noButton = document.getElementById('no-button')
         const yesButton = document.getElementById('yes-button')
-        const OFFSET = 30
+        let currentScale = parseFloat(yesButton.style.transform.replace(/[^0-9.]/g, '')) || 1;
 
-        let scaleFactor = 1.5
-
-        noButton.addEventListener('click', ()=> {
-            scaleFactor += 1.5; 
-            yesButton.style.transform = `scale(${scaleFactor})`;
-        });
+        yesButton.style.transform = `scale(${scaleFactor})`;
     }
     </script>
 </html>

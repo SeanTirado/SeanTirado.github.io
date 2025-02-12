@@ -64,3 +64,10 @@ LINK: https://seantirado.github.io/
   - Navbar will now be centered at the top of the screen
   - Extra spaces removed from top and bottom
 ![image](https://github.com/SeanTirado/SeanTirado.github.io/assets/50686265/6f4d6324-dd7c-4907-a5e3-d5e4ffa4fbd7)
+
+- Version 2.4.4
+  - Added scroll animation to each project
+  - Project will only appear when centered onscreen
+  - Navbar links to correct project
+  - New banner image changes
+![V2 4 4](https://github.com/SeanTirado/SeanTirado.github.io/assets/50686265/810c6359-9ee2-4f20-9643-308388302242)

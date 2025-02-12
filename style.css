@@ -4,9 +4,9 @@
     --ff: "Montserrat", sans-serif;
     --colorprimary: #ffffff;
     --colorsecondary: #f5f5dc;
-    --colorsecondary2: #d9b382;
-    --coloraccent: #a0c1b9; 
-    --coloraccent2: #659791;
+    --colorsecondary2: #cca97b;
+    --coloraccent: #e787da; 
+    --coloraccent2: #c455beb6;
     --h1: bold 64px/72px var(--ff);
     --p: 18px/30px var(--ff);
     --transition: 0.3s ease-in-out;
@@ -87,7 +87,6 @@ section {
     min-height: 90vh;
     border-radius: 10px;
     scroll-snap-align: center;
-    
 }
 section img {
     animation: appear-slide-down linear;
@@ -141,7 +140,7 @@ img {
     height: auto;
 }
 .project-image {
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 3px 3px 5px 3px rgba(206, 139, 52, 0.87);
     border-radius: 30px;
     transition: var(--transition);
 }
@@ -200,4 +199,64 @@ img {
 #project-track {
     display: flex;
     transform: translate();
+}
+.val-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.val-div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh;
+}
+.val-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: auto;
+    margin: 0 0 0 0;
+}
+.val-img {
+    width: 50%; 
+    max-width: 300px;
+}
+.val-text {
+    display: block;
+    font-family: "Comic Sans MS", "Comic Sans", "cursive", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+.val-button {
+    background-color: var(--coloraccent2);
+    color: var(--colorprimary);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+    color: white;
+}
+button:hover {
+    background-color: var(--coloraccent);
+  }
+button {
+    background-color: #f7b1a9;
+    border: none;
+    color: #b87c87;
+    font-family: 'Roboto';
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;   
+}
+#no-button {
+    white-space: nowrap;
 }

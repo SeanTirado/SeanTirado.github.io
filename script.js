@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
   const noButton = document.getElementById('no-button')
   const yesButton = document.getElementById('yes-button')
   const OFFSET = 30
@@ -56,4 +55,3 @@ function setButtonPosition(left, top) {
   function distanceFromCenter(boxPosition, mousePosition, boxSize) {
     return boxPosition - mousePosition + boxSize / 2
   }
-});

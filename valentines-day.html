@@ -40,7 +40,7 @@
         const yesButton = document.getElementById('yes-button')
         let currentScale = parseFloat(yesButton.style.transform.replace(/[^0-9.]/g, '')) || 1;
 
-        yesButton.style.transform = `scale(${scaleFactor})`;
+        yesButton.style.transform = `scale(${scaleFactor + 0.5})`;
     }
     </script>
 </html>

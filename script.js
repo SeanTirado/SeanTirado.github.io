@@ -1,14 +1,7 @@
   const noButton = document.getElementById('no-button')
-  //const yesButton = document.getElementById('yes-button')
   const OFFSET = 30
-
-  //let scaleFactor = 1.5
-
-  /*noButton.addEventListener('click', ()=> {
-    scaleFactor += 1.5; 
-    yesButton.style.transform = `scale(${scaleFactor})`;
-  });*/
-
+  
+  if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
 document.addEventListener('mousemove', (e) => {
     const x = e.pageX
     const y = e.pageY
@@ -54,4 +47,4 @@ function setButtonPosition(left, top) {
   
   function distanceFromCenter(boxPosition, mousePosition, boxSize) {
     return boxPosition - mousePosition + boxSize / 2
-  } 
+  }}

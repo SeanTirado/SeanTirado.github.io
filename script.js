@@ -54,4 +54,4 @@ function setButtonPosition(left, top) {
   
   function distanceFromCenter(boxPosition, mousePosition, boxSize) {
     return boxPosition - mousePosition + boxSize / 2
-  }
+  } 

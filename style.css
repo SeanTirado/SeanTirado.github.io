@@ -223,7 +223,13 @@ img {
 }
 @media (max-width: 768px) {
     .val-button-container {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .val-div {
+        flex-direction: row;
         align-items: center;
     }
 }
@@ -233,7 +239,7 @@ img {
 }
 .val-text {
     display: block;
-    font-family: "Comic Sans MS", "Comic Sans", "Brush Script MT", Roboto, "open sans", sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", "Brush Script MT", "Roboto", "open sans", sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     margin-top: 0px;

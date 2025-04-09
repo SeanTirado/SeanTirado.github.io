@@ -4,9 +4,9 @@
     --ff: "Montserrat", sans-serif;
     --colorprimary: #ffffff;
     --colorsecondary: #f5f5dc;
-    --colorsecondary2: #cca97b;
-    --coloraccent: #e787da; 
-    --coloraccent2: #c455beb6;
+    --colorsecondary2: #d9b382;
+    --coloraccent: #a0c1b9; 
+    --coloraccent2: #659791;
     --h1: bold 64px/72px var(--ff);
     --p: 18px/30px var(--ff);
     --transition: 0.3s ease-in-out;
